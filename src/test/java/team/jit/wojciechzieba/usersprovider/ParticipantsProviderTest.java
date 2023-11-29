@@ -18,7 +18,7 @@ class ParticipantsProviderTest {
     // mvn test-compile org.pitest:pitest-maven:mutationCoverage
 
     @MockBean
-    private ParticipantsProvider participantsProvider;
+    private UsersRepository usersRepository;
 
     @Autowired
     private MockMvc mockMvc;
@@ -32,7 +32,7 @@ class ParticipantsProviderTest {
         );
 
         // Mock the behavior of the ParticipantsProvider class
-        when(participantsProvider.getUsers()).thenReturn(mockUsers);
+        when(usersRepository.getAll()).thenReturn(mockUsers);
 
         // Perform GET request and assert the response
         mockMvc.perform(get("/users"))
