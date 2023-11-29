@@ -1,4 +1,4 @@
-package team.jit.wojciechzieba.usersprovider.usersprovider;
+package team.jit.wojciechzieba.usersprovider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package team.jit.wojciechzieba.usersprovider.usersprovider;
+package team.jit.wojciechzieba.usersprovider;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
